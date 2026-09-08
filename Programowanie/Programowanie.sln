@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.5.33530.505
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12120.281 insiders
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstConsoleApplication", "FirstConsoleApplication\FirstConsoleApplication.vcxproj", "{232CF6EF-0323-4165-83A6-D81A8600EFC8}"
 EndProject
@@ -86,6 +86,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqConsoleApp", "LinqConsoleApp\LinqConsoleApp.csproj", "{A90C824E-CE1E-492B-960A-A8CE9B075E1F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqPracticalTasksConsoleApp", "LinqPracticalTasksConsoleApp\LinqPracticalTasksConsoleApp.csproj", "{B1441591-C1EF-4DB5-A368-4A75C26B3F92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MAUI", "MAUI", "{3269CF10-F964-431A-8D93-75F692563F56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Podstawa", "Podstawa", "{E6176A15-6696-4E74-ACD2-B539AF087388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAppMauiApp", "FirstAppMauiApp\FirstAppMauiApp.csproj", "{FA7A68E7-4092-447E-BA31-C6C50F59E75E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -445,6 +451,18 @@ Global
 		{B1441591-C1EF-4DB5-A368-4A75C26B3F92}.Release|x64.Build.0 = Release|Any CPU
 		{B1441591-C1EF-4DB5-A368-4A75C26B3F92}.Release|x86.ActiveCfg = Release|Any CPU
 		{B1441591-C1EF-4DB5-A368-4A75C26B3F92}.Release|x86.Build.0 = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|x64.Build.0 = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Debug|x86.Build.0 = Debug|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|x64.ActiveCfg = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|x64.Build.0 = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -490,6 +508,7 @@ Global
 		{2F3FEE67-C01D-4F8D-9AB2-486FB095EFF1} = {8C2EFFF2-9B30-4AFF-A820-658B70B27985}
 		{A90C824E-CE1E-492B-960A-A8CE9B075E1F} = {8C2EFFF2-9B30-4AFF-A820-658B70B27985}
 		{B1441591-C1EF-4DB5-A368-4A75C26B3F92} = {8C2EFFF2-9B30-4AFF-A820-658B70B27985}
+		{FA7A68E7-4092-447E-BA31-C6C50F59E75E} = {3269CF10-F964-431A-8D93-75F692563F56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83F8EF81-3781-492D-8632-2687376FEE0F}
