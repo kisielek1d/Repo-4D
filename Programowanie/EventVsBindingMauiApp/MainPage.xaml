@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EventVsBindingMauiApp.MainPage">
+
+    <StackLayout>
+
+        <Slider x:Name="rotationSlider" Minimum="0" Maximum="360" MaximumTrackColor="Aqua" MinimumTrackColor="Bisque" Value="0" ValueChanged="Slider_ValueChanged"/>
+        <Slider x:Name="rotationSlider2" Minimum="0" Maximum="360" MaximumTrackColor="Aqua" MinimumTrackColor="Bisque" Value="0" ValueChanged="Slider_ValueChanged2"/>
+        <Label BackgroundColor="Bisque" Margin="40" HorizontalOptions="Center" Rotation="90" Text="To jest label" x:Name="rotationLabel"/>
+
+    </StackLayout>
+
+</ContentPage>
