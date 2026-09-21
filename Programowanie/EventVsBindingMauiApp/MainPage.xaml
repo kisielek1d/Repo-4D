@@ -25,10 +25,14 @@
         <Label Margin="40" 
                BackgroundColor="Bisque" 
                HorizontalOptions="Center" 
-               Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}" 
-               Text="{Binding Source={x:Reference rotationSlider}, Path=Value}" 
-               FontSize="{Binding Source={x:Reference rotationSlider}, Path=Value}"/>
+               Rotation="{Binding Value}" 
+               Text="{Binding FallbackValue, StringFormat='Wartość to{0, f}'}"
+               FontSize="{Binding Value}"/>
 
+        <Label Text="Podaj komunikat" />
+        <Entry Text="{Binding Source={x:Reference thisPage}, Path=Message}" />
+        <Button Clicked="Button_Clicked" Text="Wykonaj" />
+        <Label Text="{Binding Source={x:Reference thisPage},Path=ReturnMessage}" />
 
     </StackLayout>
 
