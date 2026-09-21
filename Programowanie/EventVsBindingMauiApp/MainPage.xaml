@@ -5,9 +5,30 @@
 
     <StackLayout>
 
-        <Slider x:Name="rotationSlider" Minimum="0" Maximum="360" MaximumTrackColor="Aqua" MinimumTrackColor="Bisque" Value="0" ValueChanged="Slider_ValueChanged"/>
-        <Slider x:Name="rotationSlider2" Minimum="0" Maximum="360" MaximumTrackColor="Aqua" MinimumTrackColor="Bisque" Value="0" ValueChanged="Slider_ValueChanged2"/>
-        <Label BackgroundColor="Bisque" Margin="40" HorizontalOptions="Center" Rotation="90" Text="To jest label" x:Name="rotationLabel"/>
+        <Slider x:Name="rotationSlider" 
+                Minimum="0" 
+                Maximum="360" 
+                MaximumTrackColor="Aqua" 
+                MinimumTrackColor="Bisque" 
+                Value="0" 
+                ValueChanged="Slider_ValueChanged"/>
+        <Label BackgroundColor="Bisque" 
+               Margin="40" 
+               HorizontalOptions="Center" 
+               Rotation="90" Text="To jest label" 
+               x:Name="rotationLabel"/>
+        <Label Margin="40" 
+               BackgroundColor="Bisque" 
+               HorizontalOptions="Center" 
+               Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}"
+               Text="{Binding Source={x:Reference rotationSlider}, Path=Value}"/>
+        <Label Margin="40" 
+               BackgroundColor="Bisque" 
+               HorizontalOptions="Center" 
+               Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}" 
+               Text="{Binding Source={x:Reference rotationSlider}, Path=Value}" 
+               FontSize="{Binding Source={x:Reference rotationSlider}, Path=Value}"/>
+
 
     </StackLayout>
 
