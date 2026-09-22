@@ -7,10 +7,10 @@
     <StackLayout Orientation="Vertical" Spacing="20" Padding="20">
 
         <Label Text="Podaj 1 liczbę" FontAttributes="Bold" FontSize="Large" TextColor="BlueViolet"/>
-        <Entry Text="{Binding Source={x:Reference thisPage}, Path=FirstNumber, Mode=TwoWay}" TextColor="Black" Keyboard="Numeric"/>
+        <Entry Text="{Binding Source={x:Reference thisPage}, Path=FirstNumber}" TextColor="Black" Keyboard="Numeric"/>
 
         <Label Text="Podaj 2 liczbę" FontAttributes="Bold" FontSize="Large" TextColor="BlueViolet"/>
-        <Entry Text="{Binding Source={x:Reference thisPage}, Path=SecondNumber, Mode=TwoWay}" TextColor="Black" Keyboard="Numeric"/>
+        <Entry Text="{Binding Source={x:Reference thisPage}, Path=SecondNumber}" TextColor="Black" Keyboard="Numeric"/>
 
         <Button Text="Oblicz" HeightRequest="50" WidthRequest="300" Clicked="Button_Clicked"/>
 
