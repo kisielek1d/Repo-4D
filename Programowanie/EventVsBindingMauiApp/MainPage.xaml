@@ -1,38 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage x:Class="EventVsBindingMauiApp.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="EventVsBindingMauiApp.MainPage">
+             x:Name="thisPage">
 
     <StackLayout>
+        <Slider x:Name="rotationSlider"
+                Maximum="360"
+                MaximumTrackColor="Aqua"
+                Minimum="0"
+                MinimumTrackColor="Bisque"
+                ValueChanged="Slider_ValueChanged"
+                Value="20" />
+        <Label x:Name="rotationLabel"
+               Margin="40"
+               BackgroundColor="Bisque"
+               HorizontalOptions="Center"
+               Rotation="90"
+               Text="To jest label" />
 
-        <Slider x:Name="rotationSlider" 
-                Minimum="0" 
-                Maximum="360" 
-                MaximumTrackColor="Aqua" 
-                MinimumTrackColor="Bisque" 
-                Value="0" 
-                ValueChanged="Slider_ValueChanged"/>
-        <Label BackgroundColor="Bisque" 
-               Margin="40" 
-               HorizontalOptions="Center" 
-               Rotation="90" Text="To jest label" 
-               x:Name="rotationLabel"/>
-        <Label Margin="40" 
-               BackgroundColor="Bisque" 
-               HorizontalOptions="Center" 
+        <Label Margin="40"
+               BackgroundColor="Bisque"
+               FontSize="{Binding Value, Source={x:Reference rotationSlider}}"
+               HorizontalOptions="Center"
                Rotation="{Binding Source={x:Reference rotationSlider}, Path=Value}"
-               Text="{Binding Source={x:Reference rotationSlider}, Path=Value}"/>
-        <Label Margin="40" 
-               BackgroundColor="Bisque" 
-               HorizontalOptions="Center" 
-               Rotation="{Binding Value}" 
-               Text="{Binding FallbackValue, StringFormat='Wartość to{0, f}'}"
-               FontSize="{Binding Value}"/>
+               Text="{Binding Path=Value, Source={x:Reference rotationSlider}}" />
 
-        <Label Text="Podaj komunikat" />
+        <Label Margin="40"
+               BackgroundColor="Bisque"
+               BindingContext="{x:Reference rotationSlider}"
+               FontSize="{Binding Value}"
+               HorizontalOptions="Center"
+               Rotation="{Binding Value}"
+               Text="{Binding Value, StringFormat='Wartość to {0:f}'}" />
+
+        <Label Text="Podaj komunikat:" />
         <Entry Text="{Binding Source={x:Reference thisPage}, Path=Message}" />
         <Button Clicked="Button_Clicked" Text="Wykonaj" />
-        <Label Text="{Binding Source={x:Reference thisPage},Path=ReturnMessage}" />
+        <Label Text="{Binding Source={x:Reference thisPage}, Path=ReturnMessage}" />
 
     </StackLayout>
 

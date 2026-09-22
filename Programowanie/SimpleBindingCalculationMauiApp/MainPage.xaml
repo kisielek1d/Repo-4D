@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SimpleBindingCalculationMauiApp.MainPage"
+             x:Name="thisPage">
+
+    <StackLayout Orientation="Vertical" Spacing="20" Padding="20">
+
+        <Label Text="Podaj 1 liczbę" FontAttributes="Bold" FontSize="Large" TextColor="BlueViolet"/>
+        <Entry Text="{Binding Source={x:Reference thisPage}, Path=FirstNumber, Mode=TwoWay}" TextColor="Black" Keyboard="Numeric"/>
+
+        <Label Text="Podaj 2 liczbę" FontAttributes="Bold" FontSize="Large" TextColor="BlueViolet"/>
+        <Entry Text="{Binding Source={x:Reference thisPage}, Path=SecondNumber, Mode=TwoWay}" TextColor="Black" Keyboard="Numeric"/>
+
+        <Button Text="Oblicz" HeightRequest="50" WidthRequest="300" Clicked="Button_Clicked"/>
+
+        <Label Text="{Binding Source={x:Reference thisPage}, Path=ResultMessage}" TextColor="Black" FontSize="Medium"/>
+
+    </StackLayout>
+</ContentPage>

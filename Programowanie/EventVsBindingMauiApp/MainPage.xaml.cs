@@ -28,20 +28,25 @@
         public string Message { get; set; }
 
         private string returnMessage;
-
         public string ReturnMessage
         {
-            get {return returnMessage; }
-            set { returnMessage = value; 
-            OnPropertyChanged();
+            get { return returnMessage; }
+            set
+            {
+                returnMessage = value;
+                //OnPropertyChanged("ReturnMessage");
+                //OnPropertyChanged(nameof(ReturnMessage));
+                OnPropertyChanged();
             }
         }
 
+
         private void Button_Clicked(object sender, EventArgs e)
         {
+            //resultMessageLabel.Text = messageEntry.Text;
             ReturnMessage = Message;
+            //OnPropertyChanged("ReturnMessage");
+            //OnPropertyChanged(nameof(ReturnMessage));
         }
-
     }
-
 }
