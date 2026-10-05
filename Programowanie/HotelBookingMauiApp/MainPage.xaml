@@ -4,113 +4,80 @@
              x:Class="HotelBookingMauiApp.MainPage">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            
-            <Label Text="Rezerwacja Pokoju Hotelowego" 
-                   FontSize="22" 
+            <Label Text="Rezerwacja Pokoju" 
+                   FontSize="20" 
                    FontAttributes="Bold" 
                    HorizontalOptions="Center"/>
-            
             <Entry x:Name="NameEntry" 
                    Placeholder="Imię i nazwisko"/>
-            
             <Entry x:Name="EmailEntry" 
                    Placeholder="Adres e-mail" 
                    Keyboard="Email"/>
-            
             <VerticalStackLayout Spacing="5">
-                
                 <Label Text="Data przyjazdu:"/>
-                
                 <DatePicker x:Name="ArrivalDatePicker"/>
-                
             </VerticalStackLayout>
-            
+
             <VerticalStackLayout Spacing="5">
-                
                 <Label Text="Liczba nocy:"/>
-                
                 <HorizontalStackLayout Spacing="15">
-                    
                     <Stepper x:Name="NightsStepper" 
                              Minimum="1" 
                              Maximum="14"
                              Value="1"/>
-                    
                     <Label Text="{Binding Source={x:Reference NightsStepper}, Path=Value, StringFormat='{0:F0}'}" 
                            VerticalOptions="Center" 
                            FontSize="13"/>
-                    
                 </HorizontalStackLayout>
-                
             </VerticalStackLayout>
-            
+
             <VerticalStackLayout Spacing="5">
-                
                 <Label Text="Liczba osób:"/>
-                
                 <HorizontalStackLayout Spacing="15">
-                    
                     <Stepper x:Name="GuestsStepper" 
                              Minimum="1" 
                              Maximum="4" 
                              Value="1"/>
-                    
                     <Label Text="{Binding Source={x:Reference GuestsStepper}, Path=Value, StringFormat='{0:F0}'}" 
                            VerticalOptions="Center" 
                            FontSize="16"/>
-                    
                 </HorizontalStackLayout>
-                
             </VerticalStackLayout>
-            
-            <VerticalStackLayout Spacing="5">
-                
-                <Label Text="Rodzaj pokoju:"/>
 
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Rodzaj pokoju:"/>
                 <Picker x:Name="RoomPicker" 
                         Title="Wybierz pokój">
                     <Picker.ItemsSource>
-                        
-                        <x:Array Type="{x:Type x:String}">
 
+                        <x:Array Type="{x:Type x:String}">
                             <x:String>Pokój jednoosobowy (200 zł / noc)</x:String>
                             <x:String>Pokój dwuosobowy (300 zł / noc)</x:String>
                             <x:String>Apartament (500 zł / noc)</x:String>
-                                
                         </x:Array>
-                            
                     </Picker.ItemsSource>
                 </Picker>
-                    
             </VerticalStackLayout>
-                
+
             <HorizontalStackLayout Spacing="10">
-                
                 <Switch x:Name="BreakfastSwitch"/>
-                
                 <Label Text="Śniadanie (+40 zł / os. / noc)" 
                        VerticalOptions="Center"/>
-                
             </HorizontalStackLayout>
-                
+
             <HorizontalStackLayout Spacing="10">
-                
                 <CheckBox x:Name="ParkingCheckBox"/>
-                
                 <Label Text="Miejsce parkingowe (+30 zł / noc)" 
                        VerticalOptions="Center"/>
-                
             </HorizontalStackLayout>
-                
+
             <Button Text="Oblicz koszt" 
                     Clicked="OnCalculateClicked" 
                     BackgroundColor="#512BD4" 
                     TextColor="White"/>
-                
             <Label x:Name="ResultLabel" 
                    Text="Podsumowanie rezerwacji pojawi się tutaj." 
-                   FontSize="10"/>
-                
+                   FontSize="6"/>
         </VerticalStackLayout>
     </ScrollView>
 
