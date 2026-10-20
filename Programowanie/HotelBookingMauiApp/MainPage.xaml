@@ -77,7 +77,7 @@
                     TextColor="White"/>
             <Label x:Name="ResultLabel" 
                    Text="Podsumowanie rezerwacji pojawi się tutaj." 
-                   FontSize="6"/>
+                   FontSize="12"/>
         </VerticalStackLayout>
     </ScrollView>
 
