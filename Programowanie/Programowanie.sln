@@ -125,6 +125,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "09. SportsEquipment", "09. 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsEquipmentRentalMauiApp", "SportsEquipmentRentalMauiApp\SportsEquipmentRentalMauiApp.csproj", "{CE10C0AC-C884-4A80-947B-C8BAF18D39F7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10. VocabularyFlashcards", "10. VocabularyFlashcards", "{F8A66321-9392-4817-A59D-56C526B6B4F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocabularyFlashcardsMauiApp", "VocabularyFlashcardsMauiApp\VocabularyFlashcardsMauiApp.csproj", "{E72C35D7-32BD-42EA-BC04-F6EDB5345853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -598,6 +602,19 @@ Global
 		{CE10C0AC-C884-4A80-947B-C8BAF18D39F7}.Release|x64.Build.0 = Release|Any CPU
 		{CE10C0AC-C884-4A80-947B-C8BAF18D39F7}.Release|x86.ActiveCfg = Release|Any CPU
 		{CE10C0AC-C884-4A80-947B-C8BAF18D39F7}.Release|x86.Build.0 = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|x64.Build.0 = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Debug|x86.Build.0 = Debug|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|x64.ActiveCfg = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|x64.Build.0 = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|x86.ActiveCfg = Release|Any CPU
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -661,6 +678,8 @@ Global
 		{472B3A95-621A-45C7-8189-16F2F4C58B8C} = {ECC4B384-A419-4F4D-B189-82BF3205D4BE}
 		{72D3AA4E-F293-44F1-AD18-DCACC59B6778} = {3269CF10-F964-431A-8D93-75F692563F56}
 		{CE10C0AC-C884-4A80-947B-C8BAF18D39F7} = {72D3AA4E-F293-44F1-AD18-DCACC59B6778}
+		{F8A66321-9392-4817-A59D-56C526B6B4F5} = {3269CF10-F964-431A-8D93-75F692563F56}
+		{E72C35D7-32BD-42EA-BC04-F6EDB5345853} = {F8A66321-9392-4817-A59D-56C526B6B4F5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {83F8EF81-3781-492D-8632-2687376FEE0F}

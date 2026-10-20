@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VocabularyFlashcardsMauiApp.MainPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Black}}">
+
+    <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
+        <Label Text="Fiszki do nauki słówek"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+        <CarouselView x:Name="FlashcardsCarousel"
+                      ItemsSource="{Binding Flashcards}"
+                      CurrentItemChanged="OnCurrentItemChanged"
+                      HeightRequest="150"
+                      IndicatorView="IndicatorView">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="Gray"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 10"
+                            Margin="10"
+                            BackgroundColor="{AppThemeBinding Light={StaticResource LightGray}, Dark={StaticResource DarkGray}}">
+                        <VerticalStackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label Text="{Binding English}"
+                                   FontSize="32"
+                                   FontAttributes="Bold"
+                                   HorizontalOptions="Center" />
+                        </VerticalStackLayout>
+                    </Border>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="IndicatorView"
+                       IndicatorColor="LightGray"
+                       SelectedIndicatorColor="DarkGray"
+                       HorizontalOptions="Center" />
+        <Button Text="Pokaż tłumaczenie"
+                Clicked="OnShowTranslationClicked"
+                HorizontalOptions="Center" />
+        <Label x:Name="TranslationLabel"
+               Text=""
+               FontSize="22"
+               HorizontalOptions="Center"
+               TextColor="{StaticResource Primary}" />
+        <Button Text="Zacznij od początku"
+                Clicked="OnStartOverClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="IndianRed"
+                TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>
