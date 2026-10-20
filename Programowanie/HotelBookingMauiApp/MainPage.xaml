@@ -73,7 +73,7 @@
 
             <Button Text="Oblicz koszt" 
                     Clicked="OnCalculateClicked" 
-                    BackgroundColor="#512BD4" 
+                    BackgroundColor="Purple" 
                     TextColor="White"/>
             <Label x:Name="ResultLabel" 
                    Text="Podsumowanie rezerwacji pojawi się tutaj." 
